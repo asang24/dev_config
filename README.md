@@ -41,7 +41,7 @@ cp .tmux.conf.local ~/.tmux.conf.local
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1  # 默认值 2，设置成 1 合适，设置成 0 就太快了
+defaults write NSGlobalDomain KeyRepeat -int 2  # 默认值 2，设置成 1 合适，设置成 0 就太快了
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 ```
 
