@@ -1,0 +1,20 @@
+require("plugins.plugins")
+
+require("core.options")
+require("core.keymaps")
+
+-- 插件
+require("plugins.themes")
+require("plugins.lualine")
+require("plugins.nvim-tree")
+require("plugins.treesitter")
+require("plugins.comment")
+require("plugins.telescope")
+require("plugins.cmp")
+require("plugins.lsp.mason")
+require("plugins.lsp.lspsaga")
+require("plugins.lsp.lspconfig")
+require("plugins.autopairs")
+require("plugins.gitsigns")
+require("plugins.bufferline")
+require("plugins.toggleterm")
