@@ -31,7 +31,7 @@ opt.clipboard = "unnamed"
 
 -- 搜索
 opt.ignorecase = true
-opt.smartcase= true
+opt.smartcase = true
 -- Enable highlight on sear
 opt.hlsearch = true
 opt.incsearch = true
@@ -41,9 +41,9 @@ opt.termguicolors = true
 opt.signcolumn = "yes"
 
 -- utf-8
-vim.scriptencoding = 'utf-8'
-opt.encoding = 'utf-8'
-opt.fileencoding = 'utf-8'
+vim.scriptencoding = "utf-8"
+opt.encoding = "utf-8"
+opt.fileencoding = "utf-8"
 
 -- Incremental live completion
 opt.inccommand = "nosplit"
@@ -59,4 +59,3 @@ opt.foldenable = true
 -- Use ripgrep as grep tool
 opt.grepprg = "rg --vimgrep --no-heading"
 opt.grepformat = "%f:%l:%c:%m,%f:%l:%m"
-
