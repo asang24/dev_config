@@ -27,10 +27,9 @@ require("gruvbox").setup({
 vim.cmd("colorscheme gruvbox")
 
 require("transparent").setup({
-  enable = true, -- boolean: enable transparent
-  extra_groups = { -- table/string: additional groups that should be cleared
-    "Comment",
-    'Normal'
-  },
-  exclude = {}, -- table: groups you don't want to clear
+    extra_groups = { -- table/string: additional groups that should be cleared
+        "Comment",
+        'Normal'
+    },
+    exclude_groups = {}, -- table: groups you don't want to clear
 })
