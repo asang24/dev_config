@@ -48,8 +48,6 @@ return require("packer").startup(function(use)
 
     use("p00f/nvim-ts-rainbow")           -- 配合treesitter，不同括号颜色区分
     use("christoomey/vim-tmux-navigator") -- 用ctl-hjkl来定位窗口
-    use("xiyaowong/nvim-transparent")     -- nvim背景透明
-
 
     -- coc 补全
     use({ "neoclide/coc.nvim", branch = "release" })
@@ -83,6 +81,7 @@ return require("packer").startup(function(use)
     use { 'yaocccc/vim-comment', cmd = '*ToggleComment' }
 
     use { 'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons' }
+
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins

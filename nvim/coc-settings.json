@@ -61,6 +61,9 @@
         "border": true,
         "rounded": true
     },
+    "git.addGBlameToVirtualText": true,
+    "git.addGBlameToBufferVar": true,
+    "git.enableGlobalStatus": true,
     "notification.disabledProgressSources": [
         "*"
     ],

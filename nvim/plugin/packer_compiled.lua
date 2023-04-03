@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -111,11 +116,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/nvim-go",
     url = "https://github.com/crispgm/nvim-go"
-  },
-  ["nvim-transparent"] = {
-    loaded = true,
-    path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/nvim-transparent",
-    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
