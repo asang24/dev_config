@@ -52,6 +52,8 @@ return require("packer").startup(function(use)
     -- coc 补全
     use({ "neoclide/coc.nvim", branch = "release" })
 
+    use({ 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' })
+
     -- file telescope
     use("BurntSushi/ripgrep")
     -- 文件检索
@@ -75,8 +77,6 @@ return require("packer").startup(function(use)
 
     use("gelguy/wilder.nvim")
 
-    -- signcolumn显示折叠信息
-    use { 'yaocccc/nvim-foldsign', event = 'CursorHold', config = 'require("nvim-foldsign").setup()' }
     -- 注释插件
     use { 'yaocccc/vim-comment', cmd = '*ToggleComment' }
 

@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -103,14 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/asang24/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
-  },
-  ["nvim-foldsign"] = {
-    config = { 'require("nvim-foldsign").setup()' },
-    loaded = false,
-    needs_bufread = false,
-    only_cond = false,
-    path = "/Users/asang24/.local/share/nvim/site/pack/packer/opt/nvim-foldsign",
-    url = "https://github.com/yaocccc/nvim-foldsign"
   },
   ["nvim-go"] = {
     loaded = true,
@@ -199,13 +196,6 @@ time([[Defining lazy-load commands]], true)
 pcall(vim.cmd, [[au CmdUndefined *ToggleComment ++once lua require"packer.load"({'vim-comment'}, {}, _G.packer_plugins)]])
 time([[Defining lazy-load commands]], false)
 
-vim.cmd [[augroup packer_load_aucmds]]
-vim.cmd [[au!]]
-  -- Event lazy-loads
-time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au CursorHold * ++once lua require("packer.load")({'nvim-foldsign'}, { event = "CursorHold *" }, _G.packer_plugins)]]
-time([[Defining lazy-load event autocommands]], false)
-vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

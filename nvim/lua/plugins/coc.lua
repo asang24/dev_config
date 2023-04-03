@@ -40,14 +40,20 @@ keyset("i", "<c-j>", "<Plug>(coc-snippets-expand-jump)")
 -- Use <c-space> to trigger completion
 keyset("i", "<c-space>", "coc#refresh()", { silent = true, expr = true })
 
--- Use `[g` and `]g` to navigate diagnostics
--- Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
-keyset("n", "[g", "<Plug>(coc-diagnostic-prev)", { silent = true })
-keyset("n", "]g", "<Plug>(coc-diagnostic-next)", { silent = true })
+-- navigate chunks of current buffer
+keyset("n", "[g", "<Plug>(coc-git-prevchunk)", { silent = true })
+keyset("n", "]g", "<Plug>(coc-git-nextchunk)", { silent = true })
+
 keyset("n", "[c", "<Plug>(coc-git-prevconflict)", { silent = true })
 keyset("n", "]c", "<Plug>(coc-git-nextconflict)", { silent = true })
+
 keyset("n", "gc", "<Plug>(coc-git-commit)", { silent = true })
 keyset("n", "gs", "<Plug>(coc-git-chunkinfo)", { silent = true })
+
+-- navigate diagnostics
+keyset("n", "[d", "<Plug>(coc-diagnostic-prev)", { silent = true })
+keyset("n", "]d", "<Plug>(coc-diagnostic-next)", { silent = true })
+
 
 -- GoTo code navigation
 keyset("n", "gd", "<Plug>(coc-definition)", { silent = true })

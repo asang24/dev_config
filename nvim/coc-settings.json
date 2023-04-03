@@ -61,9 +61,11 @@
         "border": true,
         "rounded": true
     },
+    "git.virtualTextPrefix": "      ",
     "git.addGBlameToVirtualText": true,
     "git.addGBlameToBufferVar": true,
     "git.enableGlobalStatus": true,
+    "git.blameUseRealTime": true,
     "notification.disabledProgressSources": [
         "*"
     ],
